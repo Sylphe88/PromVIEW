@@ -14,6 +14,7 @@
 			<Item Name="Test Metric.vi" Type="VI" URL="../tests/Test Metric.vi"/>
 		</Item>
 		<Item Name="utils" Type="Folder">
+			<Item Name="Float to Go String.vi" Type="VI" URL="../src/utils/Float to Go String.vi"/>
 			<Item Name="LV timestamp to unix.vi" Type="VI" URL="../src/utils/LV timestamp to unix.vi"/>
 		</Item>
 		<Item Name="Collector.lvlib" Type="Library" URL="../src/collector/Collector.lvlib"/>
@@ -95,6 +96,12 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+			</Item>
+			<Item Name="mscorlib" Type="VI" URL="mscorlib">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="System" Type="VI" URL="System">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Web Service Error Handler.vi" Type="VI" URL="../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/Connectivity/Web Services/Weather Monitor/Web Service/Web Service Error Handler.vi"/>
 			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">

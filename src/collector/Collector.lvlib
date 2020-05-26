@@ -7,4 +7,5 @@
 	<Item Name="Collectable.lvclass" Type="LVClass" URL="../collectable/Collectable.lvclass"/>
 	<Item Name="Default Collector.lvclass" Type="LVClass" URL="../generic collector/Default Collector.lvclass"/>
 	<Item Name="LabVIEW Collector.lvclass" Type="LVClass" URL="../LabVIEW collector/LabVIEW Collector.lvclass"/>
+	<Item Name="Process Collector.lvclass" Type="LVClass" URL="../process collector/Process Collector.lvclass"/>
 </Library>

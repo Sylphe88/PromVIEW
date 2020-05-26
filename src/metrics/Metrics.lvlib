@@ -6,6 +6,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="Counter.lvclass" Type="LVClass" URL="../counter/Counter.lvclass"/>
 	<Item Name="Gauge.lvclass" Type="LVClass" URL="../gauge/Gauge.lvclass"/>
+	<Item Name="Histogram.lvclass" Type="LVClass" URL="../histogram/Histogram.lvclass"/>
 	<Item Name="Metric.lvclass" Type="LVClass" URL="../metric/Metric.lvclass"/>
 	<Item Name="Sample.lvclass" Type="LVClass" URL="../sample/Sample.lvclass"/>
 </Library>
