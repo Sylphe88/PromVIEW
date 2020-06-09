@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-28 15:36:55" Modified_Date="2020-05-28 16:10:28" Creator="EricM" Comments="" ID="c319ab435462d9cec13fa0e52102cf54">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-28 15:36:55" Modified_Date="2020-06-08 17:07:33" Creator="EricM" Comments="" ID="1c8ee313d17dc95925e132f80df21ad6">
   <Library_General_Settings>
     <Package_File_Name>thelvlab_lib_PromVIEW</Package_File_Name>
-    <Library_Version>1.0.0.2</Library_Version>
+    <Library_Version>1.0.0.7</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>builds\package</Library_Output_Folder>
@@ -133,6 +133,30 @@
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>src/provider/GProviders</Path>
+        <Destination>10</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>src/provider/PromVIEW</Path>
+        <Destination>10</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>examples/basic metrics</Path>
+        <Destination>1</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>examples/custom collector</Path>
+        <Destination>1</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -146,9 +170,27 @@
       <Exclusions>
         <Path>tests</Path>
       </Exclusions>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
+      <Exclusions>
+        <Path>.gitattributes</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>.gitignore</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>LICENSE</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>PromVIEW Metrics build log.txt</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>PromVIEW Prometheus-Export build log.txt</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>PromVIEW.lvproj</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>src/exposition/server/Get Metrics Template VI.vit</Path>
+      </Exclusions>
     </Source_Files>
     <License_Agreement_Filepath/>
     <Licensing_and_Activation>
@@ -173,7 +215,7 @@
       <Custom_Category_Name/>
       <Custom_Category_Icon>000005D6002900000012000000020000000D00FFFFFF000100000000000A0000000800000000002000200028000002BF0000028B000000010007002000180000000000FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000FFFFFF000000FFFFFF000000FFFFFF000000000000FFFFFF000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF000000000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000000000FFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF000000000000000000FFFFFF000000000000FFFFFF000000FFFFFFFFFFFF000000000000000000FFFFFF000000000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000000000FFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000FFFFFF000000000000000000FFFFFF000000FFFFFF000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFF000000FFFFFF000000000000FFFFFF000000000000FFFFFF000000FFFFFF000000FFFFFF000000000000FFFFFFFFFFFFFFFFFF000000FFFFFFFFFFFF000000FFFFFF000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000001EAD132AD4A92AAA94ED3B2AD4A92ABA94ADAB12D00000001002900000012000000020000000D00CCCCFF000100000000000A0000000800190000002000200028000002BF0000028B001900010020002000180000000000FFFFFF0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6C00006C00006C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C00006C0000FFFFFF6C0000FFFFFFFFFFFFFFFFFF6C0000FFFFFFFFFFFF6C00006C0000FFFFFFFFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C00006C0000FFFFFFFFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFFFFFFFFFFFFFF6C0000FFFFFFFFFFFF6C00006C00006C0000FFFFFF6C00006C0000FFFFFF6C0000FFFFFFFFFFFF6C00006C00006C0000FFFFFF6C00006C0000FFFFFFFFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C00006C0000FFFFFFFFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C00006C00006C0000FFFFFF6C0000FFFFFF6C0000FFFFFFFFFFFFFFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFF6C0000FFFFFF6C00006C0000FFFFFF6C00006C0000FFFFFF6C0000FFFFFF6C0000FFFFFF6C00006C0000FFFFFFFFFFFFFFFFFF6C0000FFFFFFFFFFFF6C0000FFFFFF6C00006C0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000001EAD132AD4A92AAA94ED3B2AD4A92ABA94ADAB12D00000001</Custom_Category_Icon>
       <Controls_Palette_Information>
-        <Virtual_Palette_Base_Path/>
+        <Virtual_Palette_Base_Path>Controls</Virtual_Palette_Base_Path>
         <Palette_Disk_Base_Path>&lt;menus&gt;\Controls</Palette_Disk_Base_Path>
         <Syncing_MNU_file/>
       </Controls_Palette_Information>
@@ -203,7 +245,7 @@
     </Install_Requirements>
     <LabVIEW>
       <close_labview_before_install>false</close_labview_before_install>
-      <restart_labview_after_install>false</restart_labview_after_install>
+      <restart_labview_after_install>true</restart_labview_after_install>
       <skip_mass_compile_after_install>false</skip_mass_compile_after_install>
     </LabVIEW>
     <VI_Docs>
@@ -290,7 +332,7 @@
         <Path>Exposition</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>28482E28E75C062D73730FAD899E9429</GUID>
+      <GUID>2403221AB76D899705FEDE619F88A594</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -353,7 +395,7 @@
         <Path>src\metrics\histogram</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6810912F5C3475C4FF79A936447ADAEA</GUID>
+      <GUID>0D22D4B30C9F7CE766363F89BBD60A0A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -377,7 +419,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>~ESF Method~</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Get Metric</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -405,7 +447,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>~ESF Method~</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Get Names</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -433,7 +475,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>~ESF Method~</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Register Metric</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -447,7 +489,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>~ESF Method~</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Register Collector</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -461,7 +503,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>~ESF Method~</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Collect</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -472,7 +514,7 @@
         <Path>src\registry\session\Collect.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C592E51249F4C0434C41D4513CCCA04D</GUID>
+      <GUID>5C10ACEDA2FB53047FE3C23B272014F2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -521,7 +563,7 @@
         <Path>src\collector\process collector\Create.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>25293BB7BAABFBA72BAE76A0D110277A</GUID>
+      <GUID>35F99D3F7F4645FEE05FC3D186408EA7</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -598,7 +640,7 @@
         <Path>src\metrics\gauge\Set.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>41C0D35B549F9B94C3F3235BFD89EE38</GUID>
+      <GUID>0EBDF9709B5ACAE6B13FA95076CA928F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -647,7 +689,7 @@
         <Path>src\metrics\counter\Increment.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AFA713B0785DF710F56EA518DE5AF55D</GUID>
+      <GUID>7152CDDD8C52FA33974B45C306A9B92A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -696,7 +738,7 @@
         <Path>src\metrics\histogram\Observe.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BF7CC171DC0034068F98917006470097</GUID>
+      <GUID>34C5DEB863056864EF2B0C6889C26DF1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -720,7 +762,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Obtain Session.vi</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Obtain Registry Session</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -734,7 +776,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Release Session.vi</NameSub_Menu_Name>
+        <NameSub_Menu_Name>Release Registry Session</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -745,7 +787,7 @@
         <Path>src\registry\session\Release Session.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BB87F007FAFC5209A7574ABF0E65DFE5</GUID>
+      <GUID>0885A71915A4E25169D125EC977623D0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -769,7 +811,7 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Get Metrics.vi</NameSub_Menu_Name>
+        <NameSub_Menu_Name>GET metrics route</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
         <Position>
@@ -780,7 +822,7 @@
         <Path>src\exposition\server\Get Metrics.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>46CF09263A707F36205DD113E8E2F3C4</GUID>
+      <GUID>1DC728A16177DDAD43EB6B6CA131C63C</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

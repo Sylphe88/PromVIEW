@@ -16,3 +16,5 @@
 *.lvlps
 .cache/
 *build log.txt
+
+build*

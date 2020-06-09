@@ -18,8 +18,16 @@
 		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="examples" Type="Folder"/>
+		<Item Name="provider" Type="Folder">
+			<Item Name="PromVIEW Instantiate WS Dialog.vi" Type="VI" URL="../src/provider/PromVIEW/PromVIEW Instantiate WS Dialog.vi"/>
+			<Item Name="PromVIEW Instantiate WS.vi" Type="VI" URL="../src/provider/PromVIEW/PromVIEW Instantiate WS.vi"/>
+			<Item Name="PromVIEW.ini" Type="Document" URL="../src/provider/GProviders/PromVIEW.ini"/>
+			<Item Name="PromVIEW_GlobalInit.vi" Type="VI" URL="../src/provider/PromVIEW/PromVIEW_GlobalInit.vi"/>
+			<Item Name="PromVIEW_GlobalInterface.vi" Type="VI" URL="../src/provider/PromVIEW/PromVIEW_GlobalInterface.vi"/>
+			<Item Name="PromVIEW_GlobalOnCommand.vi" Type="VI" URL="../src/provider/PromVIEW/PromVIEW_GlobalOnCommand.vi"/>
+		</Item>
 		<Item Name="tests" Type="Folder">
-			<Item Name="create ws.vi" Type="VI" URL="../tests/create ws.vi"/>
 			<Item Name="Test Metric.vi" Type="VI" URL="../tests/Test Metric.vi"/>
 		</Item>
 		<Item Name="utils" Type="Folder">
@@ -194,6 +202,7 @@
 			<Item Name="Error Codes.ctl" Type="VI" URL="/&lt;resource&gt;/dialog/PreferencesDialog/PreferencePages/WebServer_SubVIs/Error Codes.ctl"/>
 			<Item Name="Get Result Code.vi" Type="VI" URL="/&lt;resource&gt;/dialog/PreferencesDialog/PreferencePages/WebServer_SubVIs/Get Result Code.vi"/>
 			<Item Name="GetDefaultPort.vi" Type="VI" URL="/&lt;resource&gt;/dialog/PreferencesDialog/PreferencePages/WebServer_SubVIs/GetDefaultPort.vi"/>
+			<Item Name="Global_Interface.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/Global_Interface.ctl"/>
 			<Item Name="ItemRef.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/ItemRef.ctl"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -205,15 +214,19 @@
 			<Item Name="mxLvDebugDisplayCaller.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvDebugDisplayCaller.vi"/>
 			<Item Name="mxLvErrorHandler.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvErrorHandler.vi"/>
 			<Item Name="mxLvGetIntProperty.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvGetIntProperty.vi"/>
+			<Item Name="mxLvGetItem.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvGetItem.vi"/>
+			<Item Name="mxLvGetProjectRef.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvGetProjectRef.vi"/>
+			<Item Name="mxLvMenuItem.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvMenuItem.ctl"/>
+			<Item Name="mxLvNIIM.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvNIIM.ctl"/>
 			<Item Name="mxLvProvider.mxx" Type="Document" URL="/&lt;resource&gt;/Framework/Providers/mxLvProvider.mxx"/>
 			<Item Name="mxLvSetIntProperty.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvSetIntProperty.vi"/>
+			<Item Name="mxLvSetMenu.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvSetMenu.vi"/>
 			<Item Name="NI Web Service Provider.lvlib" Type="Library" URL="/&lt;resource&gt;/Framework/Providers/ws_project_provider/common/NI Web Service Provider.lvlib"/>
 			<Item Name="Prompt for Credentials.vi" Type="VI" URL="/&lt;resource&gt;/dialog/PreferencesDialog/PreferencePages/WebServer_SubVIs/Prompt for Credentials.vi"/>
 			<Item Name="provcom_StringGlobals.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_StringGlobals.vi"/>
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Web Service Error Handler.vi" Type="VI" URL="../../../Program Files (x86)/National Instruments/LabVIEW 2020/examples/Connectivity/Web Services/Weather Monitor/Web Service/Web Service Error Handler.vi"/>
 			<Item Name="ws_amqp_library.dll" Type="Document" URL="ws_amqp_library.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -222,6 +235,66 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="PromVIEW Provider" Type="Source Distribution">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{9872DC01-EF30-4689-9EC7-470455EE9511}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">PromVIEW Provider</Property>
+				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
+				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[2]" Type="Path">/C/ProgramData/National Instruments/InstCache/20.0</Property>
+				<Property Name="Bld_excludedDirectory[3]" Type="Path">/C/Users/EricM/Documents/LabVIEW Data/2020(32-bit)/ExtraVILib</Property>
+				<Property Name="Bld_excludedDirectory[4]" Type="Path">instr.lib</Property>
+				<Property Name="Bld_excludedDirectory[4].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[5]" Type="Path">user.lib</Property>
+				<Property Name="Bld_excludedDirectory[5].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
+				<Property Name="Bld_localDestDir" Type="Path">resource/Framework</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{914CAD52-14E4-46BE-8F08-32C655E5AB90}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">resource/Framework</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToAppDir</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">resource/Framework/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToAppDir</Property>
+				<Property Name="Destination[2].destName" Type="Str">PromVIEW</Property>
+				<Property Name="Destination[2].path" Type="Path">resource/Framework/NI_AB_PROJECTNAME</Property>
+				<Property Name="Destination[2].path.type" Type="Str">relativeToAppDir</Property>
+				<Property Name="Destination[3].destName" Type="Str">GProviders</Property>
+				<Property Name="Destination[3].path" Type="Path">resource/Framework/GProviders</Property>
+				<Property Name="Destination[3].path.type" Type="Str">relativeToAppDir</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D17FE871-DD85-4F24-890F-90AB250F327F}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/provider/PromVIEW Instantiate WS Dialog.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/provider/PromVIEW Instantiate WS.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[3].itemID" Type="Ref"></Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/provider/PromVIEW_GlobalInit.vi</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/provider/PromVIEW_GlobalInterface.vi</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/provider/PromVIEW_GlobalOnCommand.vi</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
