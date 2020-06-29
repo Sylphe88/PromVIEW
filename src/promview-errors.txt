@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+Errors thrown when using the PromVIEW package.
+
+<nifamily familyname="PromVIEW" displayname="PromVIEW">
+</nifamily>
+</nicomment>
+<nierror code="9801">
+Cannot register this metric, its name already exists in this registry.
+</nierror>
+<nierror code="9803">
+The metric name does not match Prometheus specification.
+</nierror>
+<nierror code="9808">
+Cannot decrement a counter metric value.
+</nierror>
+<nierror code="9811">
+Insufficient number of buckets. The Histogram metric could not be created.
+</nierror>
+<nierror code="9812">
+"le" label is reserved, please choose another label name. The Histogram metric could not be created.
+</nierror>
+</nidocument>
