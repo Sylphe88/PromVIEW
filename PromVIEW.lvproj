@@ -28,6 +28,7 @@
 			<Item Name="PromVIEW_GlobalOnCommand.vi" Type="VI" URL="../src/provider/PromVIEW/PromVIEW_GlobalOnCommand.vi"/>
 		</Item>
 		<Item Name="tests" Type="Folder">
+			<Item Name="Test Labels.vi" Type="VI" URL="../tests/Test Labels.vi"/>
 			<Item Name="Test Metric.vi" Type="VI" URL="../tests/Test Metric.vi"/>
 		</Item>
 		<Item Name="utils" Type="Folder">
@@ -35,8 +36,7 @@
 			<Item Name="LV timestamp to unix.vi" Type="VI" URL="../src/utils/LV timestamp to unix.vi"/>
 		</Item>
 		<Item Name="Collector.lvlib" Type="Library" URL="../src/collector/Collector.lvlib"/>
-		<Item Name="Metrics.lvlib" Type="Library" URL="../src/metrics/Metrics.lvlib"/>
-		<Item Name="Prometheus-Export" Type="Web Service">
+		<Item Name="Export" Type="Web Service">
 			<Property Name="Bld_buildSpecName" Type="Str"></Property>
 			<Property Name="Bld_version.build" Type="Int">1</Property>
 			<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
@@ -75,6 +75,7 @@
 			</Item>
 			<Item Name="VIs de démarrage" Type="Startup VIs Container"/>
 		</Item>
+		<Item Name="Metrics.lvlib" Type="Library" URL="../src/metrics/Metrics.lvlib"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Registry.lvlib" Type="Library" URL="../src/registry/Registry.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -131,6 +132,7 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVDataTypes.lvlib" Type="Library" URL="/&lt;vilib&gt;/AppBuilder/Engine/WebServiceDescription/LVDataTypes/LVDataTypes.lvlib"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="MatchInterface.vi" Type="VI" URL="/&lt;vilib&gt;/WebServerConfig/MatchInterface.vi"/>
