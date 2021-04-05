@@ -165,13 +165,13 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
 	</Item>
 	<Item Name="Check Labels.vi" Type="VI" URL="../Check Labels.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%Y!!!!#Q!%!!!!&amp;%!Q`````QJM97*F&lt;(:B&lt;(6F!!!;1%!!!@````]!!1R-97*F&lt;#"797RV:8-!!"*!)1R797RJ:#"-97*F&lt;(-!!!A!-0````]!+!"Q!"Y!!"Y.476U=GFD=SZM&gt;GRJ9AZ497VQ&lt;'5O&lt;(:D&lt;'&amp;T=Q!!!"*!&gt;!!#!!1!"1&gt;497VQ&lt;'6T!"*!-0````]*&lt;'&amp;C:7RO97VF!"*!&gt;!!#!!=!!1:-97*F&lt;(-!!$*!=!!?!!!?$5VF&gt;(*J9X-O&lt;(:M;7)/476U=GFD,GRW9WRB=X-!!!F.:82S;7-A;7Y!6!$Q!!Q!!!!#!!-!"A!!!!!!#!!!!!!!!!!!!!E#!!"Y!!!!!!!!#1!!!!E!!!!*!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!1!+!!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%Y!!!!#Q!%!!!!&amp;%!Q`````QJM97*F&lt;(:B&lt;(6F!!!;1%!!!@````]!!1R-97*F&lt;#"797RV:8-!!"*!)1R797RJ:#"-97*F&lt;(-!!!A!-0````]!+!"Q!"Y!!"Y.476U=GFD=SZM&gt;GRJ9AZ497VQ&lt;'5O&lt;(:D&lt;'&amp;T=Q!!!"*!&gt;!!#!!1!"1&gt;497VQ&lt;'6T!"*!-0````]*&lt;'&amp;C:7RO97VF!"*!&gt;!!#!!=!!1:-97*F&lt;(-!!$*!=!!?!!!?$5VF&gt;(*J9X-O&lt;(:M;7)/476U=GFD,GRW9WRB=X-!!!F.:82S;7-A;7Y!6!$Q!!Q!!!!#!!-!"A!!!!!!#!!!!!!!!!!!!!E#!!"Y!!!!!!!!#1!!!!E!!!!*!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!!!!!!!!!!!!*!!!!!!!1!+!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
-		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130944</Property>
 	</Item>
 	<Item Name="Flatten Label Values.vi" Type="VI" URL="../Flatten Label Values.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#M!!!!"1!%!!!!(E!Q`````R6'&lt;'&amp;U&gt;'6O:71A&lt;'&amp;C:7RW97RV:8-!&amp;%!Q`````QJM97*F&lt;(:B&lt;(6F!!!;1%!!!@````]!!AR-97*F&lt;#"797RV:8-!!&amp;1!]!!-!!!!!!!!!!%!!!!!!!!!!!!!!!!!!!!$!A!!?!!!!!!!!!!!!!!!!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!))!!!!!!%!"!!!!!!</Property>
