@@ -17,4 +17,13 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1082139136</Property>
 	</Item>
+	<Item Name="Read All Metrics.vi" Type="VI" URL="../Read All Metrics.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'G!!!!$!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!%:!=!!?!!!?$5VF&gt;(*J9X-O&lt;(:M;7)/476U=GFD,GRW9WRB=X-!!"R.:82S;7.T,GRW&lt;'FC/EVF&gt;(*J9SZM&gt;G.M98.T!!!41(!!)!!"!!5!"EVF&gt;(*J9Q!!&amp;%"!!!(`````!!9(476U=GFD=Q!_1(!!(A!!*1^$&lt;WRM:7.U&lt;X)O&lt;(:M;7)41W^M&lt;'6D&gt;'&amp;C&lt;'5O&lt;(:D&lt;'&amp;T=Q!01W^M&lt;'6D&gt;'&amp;C&lt;'5A&lt;X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!0E"Q!"Y!!#501W^M&lt;'6D&gt;'^S,GRW&lt;'FC%U.P&lt;'RF9X2B9GRF,GRW9WRB=X-!$E.P&lt;'RF9X2B9GRF)'FO!!"5!0!!$!!$!!1!"Q!)!!1!"!!%!!1!#1!%!!1!#A)!!(A!!!U)!!!!!!!!#1!!!)U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!E!!!!!!"!!M!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+	</Item>
 </LVClass>

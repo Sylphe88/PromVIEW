@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-28 15:36:55" Modified_Date="2020-06-27 21:28:25" Creator="EricM" Comments="" ID="82aaff86f07f02ad35b6c792f7cce63d">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-28 15:36:55" Modified_Date="2021-04-08 19:59:12" Creator="EricM" Comments="" ID="ff0ffe9e56ea28fa03900a795af65e10">
   <Library_General_Settings>
     <Package_File_Name>thelvlab_lib_PromVIEW</Package_File_Name>
-    <Library_Version>1.0.0.11</Library_Version>
+    <Library_Version>1.1.0.7</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>builds\package</Library_Output_Folder>
@@ -33,7 +33,15 @@
       <Description>PromVIEW is a client library written in LabVIEW to expose metrics to Prometheus (https://www.prometheus.io)
 
 PromVIEW provides the basic functions to instrument your LabVIEW code by creating metrics and collectors, and it can also be used to create an exporter through the &lt;i&gt;Tools &gt; PromVIEW &gt; Create Exposition Web Service...&lt;/i&gt; menu.
-An Prometheus exporter is a web service that exposes the metrics so Prometheus can scrape this web service and update its time-series database with the new values.</Description>
+An Prometheus exporter is a web service that exposes the metrics so Prometheus can scrape this web service and update its time-series database with the new values.
+
+&lt;b&gt;Changelog:&lt;/b&gt;
+1.1.0 : - Fixed how labels are stored in metrics so they now allow multiple values
+              BREAKING CHANGE: for all metric types, Create.vi now accepts label names as an array
+           - Edited the internal structure of metrics to handle internal "children" metrics
+           - Edited examples to reflect changes. Also the basic example is more fitted to track metrics.
+           - Partially support OpenMetrics format through metrics format and additional children metrics
+</Description>
       <Copyright/>
       <Packager/>
       <URL/>
@@ -57,7 +65,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
       </Custom_Probes>
       <Custom_Errors>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path/>
+        <Path>&lt;user.lib&gt;\errors</Path>
       </Custom_Errors>
       <Help_Files>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
@@ -203,6 +211,9 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
       <Exclusions>
         <Path>resource</Path>
       </Exclusions>
+      <Exclusions>
+        <Path>examples/promview-examplefinder.bin3</Path>
+      </Exclusions>
     </Source_Files>
     <License_Agreement_Filepath/>
     <Licensing_and_Activation>
@@ -344,7 +355,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>Exposition</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8C7583E1B5CCBC872A90FFC9B54919B3</GUID>
+      <GUID>A1D0929052E0805C402A4D84F771F5A6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -407,7 +418,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\metrics\histogram</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A141C4D129F987FC1AC4C3EC366C3186</GUID>
+      <GUID>B037A1CC34456600B6F84D3634EFCF73</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -526,7 +537,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\registry\session\Collect.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EE6DC29065E1F150DC234931362BB9D8</GUID>
+      <GUID>2534B2569E35213EE72E6F1481DFA334</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -589,7 +600,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>Advanced - Custom Collector API</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1D32889E290BB0DEFECCF2DE08F057DD</GUID>
+      <GUID>B3FE41780F0BFDDCC1EE8F067CA23EC1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -666,7 +677,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\metrics\gauge\Set.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DE8583D6E27B5E6C288C6E02A0720F40</GUID>
+      <GUID>DA9A5346663A2509D48D61C2C601A4BA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -715,7 +726,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\metrics\counter\Increment.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>134CEDE7C4562326D844C9ECED444366</GUID>
+      <GUID>0EFBDF2A86C98970A4CEB99B1B536D76</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -764,7 +775,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\metrics\histogram\Observe.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A3834EB70B2C1F76900738B2B50BD47E</GUID>
+      <GUID>1EE137BC06A7FB4D9D3843FE007CB552</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -813,7 +824,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\registry\session\Release Session.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>87433C9DD00DEE5647CAA41371072FE5</GUID>
+      <GUID>A676D50B32C6883F2DFB4DA495043E0C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -848,7 +859,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\exposition\server\Get Metrics.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>793D0BB6D0CCD639B03E05C4B71C0142</GUID>
+      <GUID>1B7286857BA6754EA251545EBFD98CB1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -911,7 +922,7 @@ An Prometheus exporter is a web service that exposes the metrics so Prometheus c
         <Path>src\collector\generic collector\Erase Metrics.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7E3FD2854E2AA86A8598E1A79AB94849</GUID>
+      <GUID>EBAF24FF237492136DB46D4A70515906</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

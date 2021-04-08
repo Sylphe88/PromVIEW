@@ -3,6 +3,7 @@
 <nicomment>
 Errors thrown when using the PromVIEW package.
 
+
 <nifamily familyname="PromVIEW" displayname="PromVIEW">
 </nifamily>
 </nicomment>
@@ -20,5 +21,8 @@ Insufficient number of buckets. The Histogram metric could not be created.
 </nierror>
 <nierror code="9812">
 "le" label is reserved, please choose another label name. The Histogram metric could not be created.
+</nierror>
+<nierror code="9818">
+Provided labels do no match registered labels. Please make sure the labels match.
 </nierror>
 </nidocument>

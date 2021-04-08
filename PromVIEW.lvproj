@@ -32,6 +32,7 @@
 			<Item Name="Test Metric.vi" Type="VI" URL="../tests/Test Metric.vi"/>
 		</Item>
 		<Item Name="utils" Type="Folder">
+			<Item Name="Flattened Call Chain.vi" Type="VI" URL="../src/utils/Flattened Call Chain.vi"/>
 			<Item Name="Float to Go Format.vi" Type="VI" URL="../src/utils/Float to Go Format.vi"/>
 			<Item Name="LV timestamp to unix.vi" Type="VI" URL="../src/utils/LV timestamp to unix.vi"/>
 		</Item>

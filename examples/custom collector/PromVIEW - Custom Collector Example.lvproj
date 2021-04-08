@@ -22,7 +22,7 @@
 			<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
 			<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
 			<Property Name="ws.serveDefaultDoc" Type="Bool">true</Property>
-			<Property Name="ws.SSE2" Type="Bool">true</Property>
+			<Property Name="ws.SSE2" Type="Bool">false</Property>
 			<Property Name="ws.static_permissions" Type="Str"></Property>
 			<Property Name="ws.version.build" Type="Int">0</Property>
 			<Property Name="ws.version.fix" Type="Int">0</Property>
@@ -78,6 +78,7 @@
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
@@ -94,7 +95,8 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Collector.lvlib" Type="Library" URL="../../../src/collector/Collector.lvlib"/>
-			<Item Name="Float to Go String.vi" Type="VI" URL="../../../src/utils/Float to Go String.vi"/>
+			<Item Name="Flattened Call Chain.vi" Type="VI" URL="../../../src/utils/Flattened Call Chain.vi"/>
+			<Item Name="Float to Go Format.vi" Type="VI" URL="../../../src/utils/Float to Go Format.vi"/>
 			<Item Name="LV timestamp to unix.vi" Type="VI" URL="../../../src/utils/LV timestamp to unix.vi"/>
 			<Item Name="Metrics.lvlib" Type="Library" URL="../../../src/metrics/Metrics.lvlib"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
